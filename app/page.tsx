@@ -1,3 +1,4 @@
+import Grid from "@/components/Grid";
 import HeroSecion from "@/components/HeroSecion";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
@@ -11,6 +12,7 @@ export default function Home() {
           {name: 'Home', link: '/', icon: <FaHome />}
         ]} />
         <HeroSecion />
+        <Grid />
       </div>
     </main>
   );
