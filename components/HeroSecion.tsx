@@ -1,112 +1,75 @@
-"use client";
-import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
-import { cn } from "@/utils/cn";
-import { Highlight } from './ui/Highlight';
-import MagicButton from './ui/MagicButton';
-import { FaLocationArrow } from 'react-icons/fa';
-import React, { useState } from "react";
-import { Spotlight } from './ui/Spotlight';
+import { FaLocationArrow } from "react-icons/fa6";
 
-export const HeroHighlight = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
+import MagicButton from "./ui/MagicButton";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
+const HeroSection = () => {
   return (
-    <div className={cn("relative h-[40rem] flex items-center bg-white dark:bg-transparent justify-center w-full group", className)}>
-      {children}
-    </div>
-  );
-};
+    <div className="pb-20 pt-36">
+      {/**
+       *  UI: Spotlights
+       *  Link: https://ui.aceternity.com/components/spotlight
+       */}
+      <div>
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          fill="white"
+        />
+        <Spotlight
+          className="h-[80vh] w-[50vw] top-10 left-full"
+          fill="purple"
+        />
+        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+      </div>
 
-export const HeroSection = ({
-  className,
-  containerClassName,
-}: {
-  className?: string;
-  containerClassName?: string;
-}) => {
-  const [showButton, setShowButton] = useState(false);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  function handleMouseMove({
-    currentTarget,
-    clientX,
-    clientY,
-  }: React.MouseEvent<HTMLDivElement>) {
-    if (!currentTarget) return;
-    let { left, top } = currentTarget.getBoundingClientRect();
-
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-  }
-
-  return (
-    <HeroHighlight className={containerClassName}>
-      {/* Spotlight Effects */}
-      <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill="white" />
-      <Spotlight className='top-10 left-full h-[80vh] -[50vw]' fill="purple" />
-      <Spotlight className='top-28 left-80 h-[80vh] -[50vw]' fill="blue" />
-
+      {/**
+       *  UI: grid
+       *  change bg color to bg-black-100 and reduce grid color from
+       *  0.2 to 0.03
+       */}
       <div
-        className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-      />
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center"
+      >
+        {/* Radial gradient for the container to give a faded look */}
+        <div
+          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        />
+      </div>
 
-      <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
-        style={{
-          WebkitMaskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-          maskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-        }}
-      />
-      <div className="relative z-20 text-center">
-        <motion.h1
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: [20, -5, 0],
-          }}
-          transition={{
-            duration: 0.5,
-            ease: [0.4, 0.0, 0.2, 1],
-            onComplete: () => setShowButton(true), // Show button after text animation
-          }}
-          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug mx-auto"
-        >
-          Innovation isn&apos;t just an idea. It&apos;s a journey, a transformation, a{" "}
-          <Highlight className="text-black dark:text-white">
-          vision, of a vision, of a vision.
-          </Highlight>
-        </motion.h1>
-        {showButton && ( // Conditionally render the button
-          <a href="#about" className="mt-8 block">
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Dynamic Web Magic with Next.js
+          </p>
+
+          {/**
+           *  Link: https://ui.aceternity.com/components/text-generate-effect
+           *
+           *  change md:text-6xl, add more responsive code
+           */}
+          <TextGenerateEffect
+            words="Transforming Concepts into Seamless User Experiences"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          />
+
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          </p>
+
+          <a href="#about">
             <MagicButton
-              title="Discover Our Works"
+              title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
-        )}
+        </div>
       </div>
-    </HeroHighlight>
+    </div>
   );
 };
 
