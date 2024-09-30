@@ -111,33 +111,38 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Devion was an incredible experience. Their team's expertise, attention to detail, and commitment to delivering top-notch solutions were evident from the start. They took our vision and turned it into a reality with remarkable precision. For anyone seeking a seamless digital transformation, Devion is the partner you need.",
+    name: "Sarah Thompson",
+    title: "Marketing Director, TechSavvy Solutions",
+    avatarImg: "/girl-avatar.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Devion exceeded our expectations in every way. Their ability to understand our goals and deliver a beautifully designed website on time was truly impressive. Their team's passion for digital innovation shines through in every project. If you're looking to enhance your online presence, Devion is the right choice.",
+    name: "Michael Rodriguez",
+    title: "CEO, GreenPath Consulting",
+    avatarImg: "/man-avatar.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "From the initial consultation to the final launch, Devion demonstrated exceptional professionalism and creativity. Their dedication to crafting a user-friendly and visually stunning website made all the difference. If you're looking to work with a company that truly cares about your brand, Devion is the one to trust.",
+    name: "Emily Carter",
+    title: "Founder, BrightLeaf Media",
+    avatarImg: "/girl-avatar.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Devion has been a game-changer for our business. Their innovative approach, quick turnaround, and commitment to excellence were apparent throughout the entire process. They go above and beyond to ensure your vision is brought to life. We couldn't be happier with the results.",
+    name: "James Miller",
+    title: "Operations Manager, UrbanTech Ventures",
+    avatarImg: "/man-avatar.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Devion's team is exceptional at what they do. Their professionalism, technical expertise, and commitment to delivering outstanding work were evident throughout our project. They listened to our needs and executed them flawlessly. For a reliable and skilled partner, Devion is unmatched.",
+    name: "Lisa Nguyen",
+    title: "COO, EverBright Technologies",
+    avatarImg: "/girl-avatar.webp",
   },
 ];
 
