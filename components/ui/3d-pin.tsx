@@ -7,12 +7,14 @@ import { cn } from "@/utils/cn";
 export const PinContainer = ({
   children,
   title,
+  pinTitle,
   href,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
+  pinTitle?: string;
   href?: string;
   className?: string;
   containerClassName?: string;
@@ -62,16 +64,18 @@ export const PinContainer = ({
         </div>
       </div>
       </a>
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} href={href} pinTitle={pinTitle} />
     </div>
   );
 };
 
 export const PinPerspective = ({
   title,
+  pinTitle,
   href,
 }: {
   title?: string;
+  pinTitle?: string;
   href?: string;
 }) => {
   return (
@@ -84,8 +88,8 @@ export const PinPerspective = ({
             target={"_blank"}
             className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 "
           >
-            <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5">
-              {title}
+            <span className="relative z-20 text-white text-xs font-bold inline-block text-center justify-center py-0.5 lg:w-[100px] w-[100px]">
+              {pinTitle}
             </span>
 
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span>
