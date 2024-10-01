@@ -85,7 +85,7 @@ export const projects = [
     pinTitle : "Live Website",
     des: "Revolutionizing finance with our blockchain platform for secure, transparent transactions.",
     img: "/project2-min.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "#",
   },
   {
@@ -149,64 +149,59 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "NextJs",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "ReactJs",
+    img: "/reactjs.svg",
   },
   {
     id: 2,
-    name: "TypeScript",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "NextJs",
+    img: "/nextjs.svg",
   },
   {
     id: 3,
-    name: "Tailwind CSS",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "TypeScript",
+    img: "/typescript.svg",
   },
   {
     id: 4,
-    name: "Aceternity UI",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Tailwind CSS",
+    img: "/tailwindcss.svg",
   },
   {
     id: 5,
-    name: "Sentry",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "github",
+    img: "/github.svg",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Web Development",
+    desc: "Creating dynamic websites tailored to client needs, enhancing online presence.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/service1.png",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Mobile App Development",
+    desc: "Designing and developing user-friendly mobile applications for iOS and Android.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/service2.png",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Digital Marketing",
+    desc: "Implementing strategies to boost online visibility and drive targeted traffic.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/service3.png",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "E-commerce Solutions",
+    desc: "Providing comprehensive e-commerce platforms to streamline online sales.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/service4.png",
   },
 ];
 
