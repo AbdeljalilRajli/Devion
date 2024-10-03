@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@babel/preset-react": "^7.25.7",
     "@react-three/drei": "^9.111.3",
     "@react-three/fiber": "^8.17.6",
-    "@sentry/nextjs": "^8.30.0",
+    "@sentry/nextjs": "^8.33.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.3",
     "mini-svg-data-uri": "^1.4.4",
